@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variable Font Demo</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:wght@250;600,wdth@100;150,slnt@0;-10,GRAD@0;100&display=swap');
+
+        body {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            height: 100vh;
+            margin: 5px;
+            background-color: #f4f4f4;
+            font-family: 'Roboto Flex', sans-serif;
+            position: relative;
+          
+        }
+
+        .grid-item {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 10rem;
+            transition: font-variation-settings 0.5s ease-in-out;
+            cursor: pointer;
+            border: 1px solid rgb(255, 95, 121);
+            margin: 5px;
+        }
+
+        /* Different hover effects for each word */
+        .weight {
+            font-variation-settings: 'wght' 250;
+            color: rgb(198, 39, 39);
+        }
+        .weight:hover {
+            font-variation-settings: 'wght' 800;
+        }
+
+        .width {
+            font-variation-settings: 'wdth' 30;
+            color: rgb(89, 119, 195);
+        }
+        .width:hover {
+            font-variation-settings: 'wdth' 150;
+        }
+
+        .slant {
+            font-variation-settings: 'slnt' 0;
+            color: rgb(37, 141, 37);
+        }
+        .slant:hover {
+            font-variation-settings: 'slnt' -10;
+        }
+
+        .grad {
+            font-variation-settings: 'GRAD' -200;
+            color: rgb(73, 25, 84);
+        }
+        .grad:hover {
+            font-variation-settings: 'GRAD' 150;
+        }
+        .nav-button {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            padding: 10px 15px;
+            background-color: pink;
+            border: none;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <button class="nav-button" onclick="window.location.href='next-demo.html'">Next Demo</button>
+    <div class="grid-item weight">Puppy</div>
+    <div class="grid-item width">Kitten</div>
+    <div class="grid-item slant">Bunny</div>
+    <div class="grid-item grad">Foal</div>
+</body>
+</html>

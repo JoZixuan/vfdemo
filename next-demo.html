@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Typography Demo</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:wght@400&wdth@75;100&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Asap:wdth@75;100&display=swap');
+
+        body {
+            font-family: 'Asap', sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+
+        .nav-button {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            padding: 10px 15px;
+            background-color: pink;
+            border: none;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: auto;
+            text-align: center;
+        }
+
+        h1 {
+            font-family: 'Roboto Flex', sans-serif;
+            font-size: 3rem;
+            font-variation-settings: 'wdth' 100;
+            text-wrap: nowrap;
+            transition: font-variation-settings 0.1s ease-in-out;
+        }
+
+        p {
+            font-size: 1.2rem;
+            line-height: 1.5rem;
+            font-variation-settings: 'wdth' 100;
+            transition: font-variation-settings 0.2s ease-in-out;
+            text-align: left;
+        }
+        @media (max-width: 950px) {
+            h1, p {
+                font-variation-settings: 'wdth' 95;
+            }
+        }
+        @media (max-width: 900px) {
+            h1, p {
+                font-variation-settings: 'wdth' 90;
+            }
+        }
+        @media (max-width: 800px) {
+            h1, p {
+                font-variation-settings: 'wdth' 85;
+            }
+        }
+        @media (max-width: 700px) {
+            h1, p {
+                font-variation-settings: 'wdth' 80;
+            }
+        }
+        @media (min-width: 100px) {
+            h1 {
+                font-variation-settings: 'wdth' 110;
+            }
+        }
+    </style>
+</head>
+<body>
+    <button class="nav-button" onclick="window.location.href='index.html'">Previous Demo</button>
+    <div class="container">
+        <h1>Responsive Typography</h1>
+        <p>
+            This is a demo article showing how variable fonts can adjust width dynamically
+            based on viewport size. As the viewport shrinks, the font width becomes narrower,
+            optimizing typographic space usage. </p>
+        <p>In addition to their technical benefits, variable fonts offer much more flexibility for typesetting in both printed and digital media. This flexibility is especially beneficial in the context of responsive design where the presentation of content adapts to different formats and contexts.
+
+The most common considerations for designing a responsive composition are tied to the availability of space. When space is limited (e.g. on small screens), the content's presentation must be optimized accordingly—line lengths are constrained, whitespace is minimized, and the potential contrast in size between small and large elements is reduced. In these situations, even very small changes in formatting can provide significant improvements in readability and visual hierarchy.
+        </p>
+    </div>
+</body>
+</html>
