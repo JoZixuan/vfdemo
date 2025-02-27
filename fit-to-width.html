@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="fit-to-width.js"></script>
+    <title>Fit-to-Width Demo</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:wght@400&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Asap:wght@400&display=swap');
+
+        body {
+            font-family: 'Asap', sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+
+        .prev-button {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            padding: 10px 15px;
+            background-color: pink;
+            border: none;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+
+        .next-button {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            padding: 10px 15px;
+            background-color: pink;
+            border: none;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+
+        .container {
+          
+            max-width: 800px;
+         
+            margin: 100px auto;
+            text-align: center;
+            
+        }
+
+        div {
+            font-variation-settings: 'wdth' 120;
+        }
+        .ftw {
+    
+            font-size: 72px;
+            line-height: 80px;
+            width: 200px;
+            margin: auto;
+     }
+
+
+    </style>
+</head>
+<body>
+    <button class="prev-button" onclick="window.location.href='next-demo.html'">Previous Demo</button>
+
+    <button class="next-button" onclick="window.location.href='third-demo.html'">Next Demo</button>
+    <div class="container">
+     <div class="ftw">
+        Web As Medium
+     </div>
+     <div class="ftw">
+        Providence
+     </div>
+     <div class="ftw">
+        Variable Font
+      </div> <div class="ftw">
+        ABCD
+      </div>
+      <div class="ftw">
+        GDMFABFA
+      </div>
+
+    </div>
+
+     <script>
+    ftw_fit(".ftw");
+    </script>
+</body>
+</html>
